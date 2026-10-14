@@ -117,7 +117,7 @@ export function Location() {
                   rel="noopener noreferrer"
                   className="mt-1 block font-display text-sm text-zinc-500 transition-colors hover:text-gold"
                 >
-                  {contact.phoneDisplay}
+                  Message us on WhatsApp
                 </a>
               </div>
             </div>

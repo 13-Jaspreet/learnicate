@@ -206,7 +206,7 @@ export function Counselling() {
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-gold"
                 >
-                  {contact.phoneDisplay}
+                  Message us on WhatsApp
                 </a>
               </p>
             </div>
