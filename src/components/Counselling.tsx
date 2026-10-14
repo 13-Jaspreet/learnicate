@@ -6,6 +6,7 @@ import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { useEnquiry } from "@/context/EnquiryContext";
 import type { Certification } from "@/data/courses";
 import { contact } from "@/data/contact";
+import { PhoneList } from "@/components/ui/PhoneList";
 
 const certifications: Certification[] = [
   "PMP",
@@ -174,17 +175,12 @@ export function Counselling() {
             </p>
 
             <div className="mt-10 space-y-4 border-l-2 border-gold/30 pl-6">
-              <p className="text-sm text-zinc-500">
+              <div className="text-sm text-zinc-500">
                 <span className="block text-xs uppercase tracking-wider text-gold">
                   Phone
                 </span>
-                <a
-                  href={`tel:${contact.phoneTel}`}
-                  className="transition-colors hover:text-gold"
-                >
-                  {contact.phoneDisplay}
-                </a>
-              </p>
+                <PhoneList className="mt-1 space-y-1" />
+              </div>
               <p className="text-sm text-zinc-500">
                 <span className="block text-xs uppercase tracking-wider text-gold">
                   Email

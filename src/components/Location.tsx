@@ -6,6 +6,7 @@ import { useEnquiry } from "@/context/EnquiryContext";
 import { CreativeButton } from "@/components/ui/CreativeButton";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { contact } from "@/data/contact";
+import { PhoneList } from "@/components/ui/PhoneList";
 
 export function Location() {
   const reduceMotion = useReducedMotion();
@@ -75,12 +76,10 @@ export function Location() {
                 <p className="font-typewriter text-xs uppercase tracking-wider text-gold">
                   Phone
                 </p>
-                <a
-                  href={`tel:${contact.phoneTel}`}
-                  className="mt-1 block font-display text-sm text-zinc-500 transition-colors hover:text-gold"
-                >
-                  {contact.phoneDisplay}
-                </a>
+                <PhoneList
+                  className="mt-1 space-y-1"
+                  linkClassName="font-display text-sm text-zinc-500 transition-colors hover:text-gold"
+                />
               </div>
             </div>
 
